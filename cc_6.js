@@ -43,3 +43,13 @@ function calculateSubscriptionCost(plan, months, discount = 0) {
 
 calculateSubscriptionCost("Basic", 6, 10); // Expected output: "Total Cost: $50"
 calculateSubscriptionCost("Premium", 12, 0); // Expected output: "Total Cost: $240"
+
+// Task 5 Currency conversion
+function convertCurrency(amount, exchangeRate) {
+    return amount * exchangeRate;
+}
+
+//Test cases
+console.log(`Converted Amount: $${convertCurrency(100, 1.1)}`); // Expected output: "Converted Amount: $110.00"
+console.log(`Converted Amount: $${convertCurrency(250, 0.85)}`); // Expected output: "Converted Amount: $212.50"
+
